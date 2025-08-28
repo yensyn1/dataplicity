@@ -1,7 +1,31 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import "../styles/header.css";
+
 function Footer() {
+    const pathname = usePathname();
     return (
-        <footer>
-            <div></div>
+        <footer className="flex flex-wrap justify-center w-full gap-10">
+            <section className="flex flex-col gap-1 text-center self-center">
+                <Link href={"/"} className={pathname === "/" ? "text-red-400 border-b-2 border-white" : "notCurrentLink"}>
+                    Inicio
+                </Link>
+                <Link href={"/Servicios"} className={pathname === "/Servicios" ? "text-red-400 border-b-2 border-white" : "notCurrentLink"}>
+                    Servicios
+                </Link>
+                <Link href={"/Contacto"} className={pathname === "/Contacto" ? "text-red-400 border-b-2 border-white" : "notCurrentLink"}>
+                    Contacto
+                </Link>
+            </section>
+
+            <h1 className="self-end">&copy; DataPlicity Todos los derechos reservados 2025</h1>
+
+            <Link href={"/"} className="hover:scale-110 transition-all duration-200 delay-100">
+                <Image src={"/logo.png"} width={120} height={120} alt="Logo de Dataplicity" className="drop-shadow-2xl " />
+            </Link>
         </footer>
     );
 }

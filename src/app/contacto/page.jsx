@@ -1,5 +1,5 @@
 function Contacto() {
-    return <div class="sandy-beach" style={{ width: "100%", height: "100vh" }}></div>;
+    return <h1>Jeepers Creepers, parece que son creepers, all those jeepers</h1>;
 }
 
 export default Contacto;
