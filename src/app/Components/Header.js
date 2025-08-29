@@ -7,6 +7,7 @@ import { Libertinus_Mono } from "next/font/google";
 import "../styles/header.css";
 
 const DataPlicityFONT = Libertinus_Mono({
+    subsets:'latin'
     weight: "400",
 });
 

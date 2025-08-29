@@ -4,23 +4,48 @@ import Image from "next/image";
 import WaLink from "./Components/WhatsappWaLink";
 import EmblaCarousel from "./Components/EmblaCarousel";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Softwares = [
     <div
-        className="flex justify-center items-center bg-amber-400 h-96"
+        className="flex justify-center items-center bg-amber-400 h-96 relative"
         style={{
             background: `url('/ImagenesSoftwareDevelop/ImagenesSoftwareDevelop/12.webp')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
         }}
     >
-        <h1>Desarrollo de Softoware</h1>
+        <h1 className="heading">Desarrollo de Softoware</h1>
+        <Link href={""} className="border-1 p-2 rounded-md absolute bottom-2 right-2">
+            Leer mas
+        </Link>
     </div>,
-    <div className="flex justify-center items-center bg-red-500 h-96">
+    <div
+        className="flex justify-center items-center bg-red-500 h-96"
+        style={{
+            background: `url('/ImagenesSoftwareDevelop/ImagenesSoftwareDevelop/13.webp')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        }}
+    >
         <h1>Desarrollo de Aplicaciones Moviles</h1>
+        <Link href={""} className="border-1 p-2 rounded-md absolute bottom-2 right-2">
+            Leer mas
+        </Link>
     </div>,
-    <div className="flex justify-center items-center bg-blue-500 h-96">
+    <div
+        className="flex justify-center items-center bg-blue-500 h-96"
+        style={{
+            background: `url('/ImagenesSoftwareDevelop/ImagenesSoftwareDevelop/11.webp')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        }}
+    >
         <h1>Desarrollo de Aplicaciones Web</h1>
+        <Link href={""} className="border-1 p-2 rounded-md absolute bottom-2 right-2">
+            Leer mas
+        </Link>
     </div>,
 ];
 
@@ -52,21 +77,37 @@ function LandingPage() {
                 <div className="flex flex-wrap w-screen justify-center gap-10 mb-10">
                     {/* Desarrollo de Software */}
                     <div className="flex flex-col gap-5">
-                        <h2 className={Informacion === "softDev" ? `p-3 bg-red-500 rounded-2xl hover:cursor-pointer` : `p-3 bg-green-500 rounded-2xl hover:cursor-pointer`}>Desarrollo de software</h2>
+                        <h2
+                            className={`p-3 rounded-2xl hover:cursor-pointer transition-colors duration-300 ${Informacion === "softDev" ? "bg-red-500" : "bg-green-500"}`}
+                            onClick={() => {
+                                setInformacion("softDev");
+                            }}
+                        >
+                            Desarrollo de software
+                        </h2>
                         <div className="w-10 h-10 bg-amber-300 self-center"></div>
                     </div>
                     {/* Desarrollo de Aplicaciones Moviles */}
                     <div className="flex flex-col gap-5">
-                        <h2 className={Informacion === "mobDev" ? `p-3 bg-red-500 rounded-2xl hover:cursor-pointer` : `p-3 bg-green-500 rounded-2xl hover:cursor-pointer`}>Desarrollo de software</h2>
+                        <h2
+                            className={`p-3 rounded-2xl hover:cursor-pointer transition-colors duration-300 ${Informacion === "mobDev" ? "bg-red-500" : "bg-green-500"}`}
+                            onClick={() => {
+                                setInformacion("mobDev");
+                            }}
+                        >
+                            Desarrollo Aplicaciones Moviles
+                        </h2>
                         <div className="w-10 h-10 bg-red-400 self-center"></div>
                     </div>
                     {/* Desarrollo de Aplicaciones WEB */}
                     <div className="flex flex-col gap-5">
                         <h2
-                            className={Informacion === "webDev" ? `p-3 bg-red-500 rounded-2xl hover:cursor-pointer` : `p-3 bg-green-500 rounded-2xl hover:cursor-pointer`}
-                            onClick={setInformacion("webDev")}
+                            className={`p-3 rounded-2xl hover:cursor-pointer transition-colors duration-300 ${Informacion === "webDev" ? "bg-red-500" : "bg-green-500"}`}
+                            onClick={() => {
+                                setInformacion("webDev");
+                            }}
                         >
-                            Desarrollo de software
+                            Desarrollo de Aplicaciones Web
                         </h2>
                         <div className="w-10 h-10 bg-blue-400 self-center"></div>
                     </div>

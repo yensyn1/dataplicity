@@ -8,7 +8,7 @@ import "../styles/embla.css";
 
 const EmblaCarousel = (props) => {
     const { slides, options } = props;
-    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Fade(), Autoplay({ playOnInit: true, delay: 300000 })]);
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Fade(), Autoplay({ playOnInit: true, delay: 6000 })]);
 
     const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
