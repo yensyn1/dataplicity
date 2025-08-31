@@ -14,20 +14,20 @@ const DataPlicityFONT = Libertinus_Mono({
 function Header() {
     const pathname = usePathname();
     return (
-        <header className={`${DataPlicityFONT.className} w-full text-black p-4 sticky top-0 backgroundColors backdrop-blur-xs border-b-2 border-red-500`}>
+        <header className={`${DataPlicityFONT.className} w-full text-black p-4 backgroundColors backdrop-blur-xs`}>
             <div className="flex justify-between gap-15 px-[10%] items-center">
                 <Link href={"/"} className="hover:scale-110 transition-all duration-200 delay-100 flex items-center">
                     <Image src={"/logo.png"} width={120} height={120} alt="Logo de Dataplicity" className="drop-shadow-2xl" />
                     <h1 className="heading  text-white">DataPlicity</h1>
                 </Link>
                 <nav className="navbar flex gap-5 font-bold font-mono">
-                    <Link href={"/"} className={pathname === "/" ? "text-red-400 border-b-2 border-white" : "notCurrentLink"}>
+                    <Link href={"/"} className={pathname === "/" ? "text-white  CurrentLink nav-link" : "notCurrentLink nav-link"}>
                         Inicio
                     </Link>
-                    <Link href={"/Servicios"} className={pathname === "/Servicios" ? "text-red-400 border-b-2 border-white" : "notCurrentLink"}>
+                    <Link href={"/Servicios"} className={pathname === "/Servicios" ? "text-white CurrentLink nav-link" : "notCurrentLink nav-link"}>
                         Servicios
                     </Link>
-                    <Link href={"/Contacto"} className={pathname === "/Contacto" ? "text-red-400 border-b-2 border-white" : "notCurrentLink"}>
+                    <Link href={"/Contacto"} className={pathname === "/Contacto" ? "text-white CurrentLink nav-link" : "notCurrentLink nav-link"}>
                         Contacto
                     </Link>
                 </nav>
