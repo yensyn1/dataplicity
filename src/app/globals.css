@@ -162,3 +162,7 @@ body {
     font-size: var(--text-sm);
     line-height: 1.5;
 }
+
+.slidesEmbla {
+    height: clamp(384px, 25vw + 5rem, 50rem);
+}

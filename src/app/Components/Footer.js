@@ -8,15 +8,15 @@ import "../styles/header.css";
 function Footer() {
     const pathname = usePathname();
     return (
-        <footer className="flex flex-wrap justify-center w-full gap-10">
+        <footer className="flex flex-wrap justify-center w-full gap-10 border-t-2 border-green-400 mt-36">
             <section className="flex flex-col gap-1 text-center self-center">
-                <Link href={"/"} className={pathname === "/" ? "text-red-400 border-b-2 border-white" : "notCurrentLink"}>
+                <Link href={"/"} className={pathname === "/" ? " text-white CurrentLink" : "notCurrentLink"}>
                     Inicio
                 </Link>
-                <Link href={"/Servicios"} className={pathname === "/Servicios" ? "text-red-400 border-b-2 border-white" : "notCurrentLink"}>
+                <Link href={"/Servicios"} className={pathname === "/Servicios" ? "text-white CurrentLink" : "notCurrentLink"}>
                     Servicios
                 </Link>
-                <Link href={"/Contacto"} className={pathname === "/Contacto" ? "text-red-400 border-b-2 border-white" : "notCurrentLink"}>
+                <Link href={"/Contacto"} className={pathname === "/Contacto" ? "text-white CurrentLink" : "notCurrentLink"}>
                     Contacto
                 </Link>
             </section>

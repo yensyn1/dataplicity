@@ -14,7 +14,7 @@ const DataPlicityFONT = Libertinus_Mono({
 function Header() {
     const pathname = usePathname();
     return (
-        <header className={`${DataPlicityFONT.className} w-full text-black p-4 backgroundColors backdrop-blur-xs`}>
+        <header className={`${DataPlicityFONT.className} sticky top-0 z-100 w-full text-black p-4 backgroundColors backdrop-blur-sm`}>
             <div className="flex justify-between gap-15 px-[10%] items-center">
                 <Link href={"/"} className="hover:scale-110 transition-all duration-200 delay-100 flex items-center">
                     <Image src={"/logo.png"} width={120} height={120} alt="Logo de Dataplicity" className="drop-shadow-2xl" />
