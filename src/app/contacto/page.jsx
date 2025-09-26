@@ -1,4 +1,5 @@
 import "../styles/contacto.css";
+import ContactForm from "../Components/contactForm";
 
 import Link from "next/link";
 function Contacto() {
@@ -29,37 +30,12 @@ function Contacto() {
                     <br />
                     Estamos disponibles para responder tus preguntas.
                 </p>
-                <Link href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20obtener%20más%20información" className="whatsapp-button">
+                <Link href="https://wa.link/9gnqct" target="blank" className="whatsapp-button">
                     Chatear por WhatsApp
                 </Link>
             </div>
 
-            <div class="form-container">
-                <h2 class="form-title">Envíanos un mensaje</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nombre completo</label>
-                        <input type="text" id="name" name="name" required placeholder="Tu nombre" />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" required placeholder="tu@email.com" />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Asunto</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Asunto del mensaje" />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
-                    </div>
-
-                    <button type="submit">Enviar mensaje</button>
-                </form>
-            </div>
+            <ContactForm />
 
             <div class="contact-methods">
                 <div class="contact-card">
