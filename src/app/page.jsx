@@ -1,12 +1,11 @@
 "use client";
 
 import CountUp from "./Components/countUp";
-import WaLink from "./Components/WhatsappWaLink";
 import EmblaCarousel from "./Components/EmblaCarousel";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Smartphone, Laptop, Cpu } from "lucide-react";
+import { Smartphone, Laptop } from "lucide-react";
 import ContactForm from "./Components/contactForm";
 
 const Softwares = [
@@ -170,14 +169,14 @@ function LandingPage() {
                         <section className="mt-16">
                             <h1 className="h4 text-center mb-6">Experiencia de Desarrollo Web</h1>
                             <div className="flex flex-wrap w-full justify-center gap-12">
-                                <div className="bg-[#417a11] w-1/5 flex flex-col justify-center items-center rounded-2xl">
+                                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
                                     <div className="w-max">
                                         <span className="h1 text-center">+</span>
                                         <CountUp from={0} to={20} separator="," direction="up" duration={5} className="count-up-text h1 text-center" />
                                     </div>
                                     <p className="body-lg text-center">Anos de Experiencia</p>
                                 </div>
-                                <div className="bg-[#417a11] w-1/5 flex flex-col justify-center items-center rounded-2xl">
+                                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
                                     <div className="w-max">
                                         <span className="h1 text-center">+</span>
                                         <CountUp from={0} to={40} separator="," direction="up" duration={5} className="count-up-text h1 text-center" />
@@ -185,7 +184,7 @@ function LandingPage() {
                                     <p className="body-lg">Proyectos Realizados</p>
                                 </div>
 
-                                <div className="bg-[#417a11] w-1/5 flex flex-col justify-center items-center rounded-2xl h-60">
+                                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl h-60">
                                     <div className="w-max">
                                         <span className="h1 text-center">+</span>
                                         <CountUp from={0} to={25} separator="," direction="up" duration={5} className="count-up-text h1 text-center" />
@@ -210,14 +209,14 @@ function LandingPage() {
                         <section className="mt-16">
                             <h1 className="h4 text-center mb-6">Experiencia de Desarrollo de Software</h1>
                             <div className="flex flex-wrap w-full justify-center gap-12">
-                                <div className="bg-[#417a11] w-1/5 flex flex-col justify-center items-center rounded-2xl">
+                                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
                                     <div className="w-max">
                                         <span className="h1 text-center">+</span>
                                         <CountUp from={0} to={20} separator="," direction="up" duration={5} className="count-up-text h1 text-center" />
                                     </div>
                                     <p className="body-lg text-center">Anos de Experiencia</p>
                                 </div>
-                                <div className="bg-[#417a11] w-1/5 flex flex-col justify-center items-center rounded-2xl">
+                                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
                                     <div className="w-max">
                                         <span className="h1 text-center">+</span>
                                         <CountUp from={0} to={50} separator="," direction="up" duration={5} className="count-up-text h1 text-center" />
@@ -225,7 +224,7 @@ function LandingPage() {
                                     <p className="body-lg">Proyectos Realizados</p>
                                 </div>
 
-                                <div className="bg-[#417a11] w-1/5 flex flex-col justify-center items-center rounded-2xl h-60">
+                                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
                                     <div className="w-max">
                                         <span className="h1 text-center">+</span>
                                         <CountUp from={0} to={30} separator="," direction="up" duration={5} className="count-up-text h1 text-center" />
@@ -250,14 +249,14 @@ function LandingPage() {
                         <section className="mt-16">
                             <h1 className="h4 text-center mb-6">Experiencia de Desarrollo Movil</h1>
                             <div className="flex flex-wrap w-full justify-center gap-12">
-                                <div className="bg-[#417a11] w-1/5 flex flex-col justify-center items-center rounded-2xl">
+                                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
                                     <div className="w-max">
                                         <span className="h1 text-center">+</span>
                                         <CountUp from={0} to={10} separator="," direction="up" duration={5} className="count-up-text h1 text-center" />
                                     </div>
                                     <p className="body-lg text-center">Anos de Experiencia</p>
                                 </div>
-                                <div className="bg-[#417a11] w-1/5 flex flex-col justify-center items-center rounded-2xl">
+                                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
                                     <div className="w-max">
                                         <span className="h1 text-center">+</span>
                                         <CountUp from={0} to={20} separator="," direction="up" duration={5} className="count-up-text h1 text-center" />
@@ -265,7 +264,7 @@ function LandingPage() {
                                     <p className="body-lg">Proyectos Realizados</p>
                                 </div>
 
-                                <div className="bg-[#417a11] w-1/5 flex flex-col justify-center items-center rounded-2xl h-60">
+                                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
                                     <div className="w-max">
                                         <span className="h1 text-center">+</span>
                                         <CountUp from={0} to={15} separator="," direction="up" duration={5} className="count-up-text h1 text-center" />
