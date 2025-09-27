@@ -50,7 +50,7 @@ function Header() {
                     <Link href={"/Servicios"} className={pathname === "/Servicios" ? "text-white CurrentLink nav-link" : "notCurrentLink nav-link"}>
                         Servicios
                     </Link>
-                    <Link href={"/Contacto"} className={pathname === "/Contacto" ? "text-white CurrentLink nav-link" : "notCurrentLink nav-link"}>
+                    <Link href={"/contacto"} className={pathname === "/contacto" ? "text-white CurrentLink nav-link" : "notCurrentLink nav-link"}>
                         Contacto
                     </Link>
                 </nav>
