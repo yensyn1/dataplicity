@@ -70,7 +70,7 @@ const HamMenu = () => {
                                 initial={{ y: 50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut" }}
-                                className={pathname === "/" ? `duration-300 border-b-1 text-[#417a11]` : `text-white hover:text-red-300 hover:scale-105 duration-300 `}
+                                className={pathname === "/" ? `duration-300 border-b-1 text-[#417a11] h3` : `text-white hover:text-red-300 hover:scale-105 duration-300 h3`}
                             >
                                 Inicio
                             </motion.h1>
@@ -83,7 +83,7 @@ const HamMenu = () => {
                                 initial={{ y: 50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut" }}
-                                className={pathname === "/Servicios" ? `text-[#417a11] duration-300 border-b-1 ` : `text-white hover:text-red-300 hover:scale-105 duration-300 `}
+                                className={pathname === "/Servicios" ? `text-[#417a11] duration-300 border-b-1 h3` : `text-white hover:text-red-300 hover:scale-105 duration-300 h3`}
                             >
                                 Servicios
                             </motion.h1>
@@ -96,7 +96,7 @@ const HamMenu = () => {
                                 initial={{ y: -50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ ease: "easeInOut" }}
-                                className={pathname === "/contacto" ? `text-[#417a11] duration-300 border-b-1 ` : `text-white hover:text-red-300 hover:scale-105 duration-300 `}
+                                className={pathname === "/contacto" ? `text-[#417a11] duration-300 border-b-1 h3` : `text-white hover:text-red-300 hover:scale-105 duration-300 h3`}
                             >
                                 Contacto
                             </motion.h1>
