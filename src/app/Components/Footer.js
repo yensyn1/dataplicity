@@ -8,7 +8,7 @@ import "../styles/header.css";
 function Footer() {
     const pathname = usePathname();
     return (
-        <footer className="flex flex-wrap justify-center w-full gap-10 border-t-2 border-green-400 mt-36">
+        <footer className="flex flex-wrap justify-center w-full gap-10  mt-10 bg-[#0d0d0d] text-white py-10 border-t-1 border-[#333]">
             <section className="flex flex-col gap-1 text-center self-center">
                 <Link href={"/"} className={pathname === "/" ? " text-white CurrentLink" : "notCurrentLink"}>
                     Inicio
