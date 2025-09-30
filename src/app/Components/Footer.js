@@ -16,7 +16,7 @@ function Footer() {
                 <Link href={"/Servicios"} className={pathname === "/Servicios" ? "text-white CurrentLink" : "notCurrentLink"}>
                     Servicios
                 </Link>
-                <Link href={"/contacto"} className={pathname === "/Contacto" ? "text-white CurrentLink" : "notCurrentLink"}>
+                <Link href={"/Contacto"} className={pathname === "/Contacto" ? "text-white CurrentLink" : "notCurrentLink"}>
                     Contacto
                 </Link>
             </section>
