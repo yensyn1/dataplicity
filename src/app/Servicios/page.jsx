@@ -10,21 +10,21 @@ const serviceData = [
         title: "Desarrollo Web",
         desc: "Soluciones personalizadas diseñadas específicamente para las necesidades únicas de tu empresa.",
         img: "/imagenesServicios/31.webp",
-        features: ["Análisis de requerimientos", "Diseño personalizado", "Implementación ágil", "Soporte continuo"],
+        features: ["SEO Optimizado", "Diseño responsive", "Velocidad de carga", "Seguridad web", "Accesibilidad y usabilidad"],
     },
     {
         icon: "fas fa-mobile-alt",
         title: "Desarrollo Movil",
         desc: "Aplicaciones móviles con tecnología de punta para maximizar tu presencia digital.",
         img: "/imagenesServicios/32.webp",
-        features: ["Diseño responsive", "Desarrollo multiplataforma", "Optimización SEO", "Integraciones API"],
+        features: ["Rendimiento eficiente", "Interfaz intuitiva", "Compatibilidad multiplataforma", "Seguridad de datos", "Actualizacion y escalabilidad"],
     },
     {
         icon: "fas fa-server",
         title: "Desarrollo Software",
         desc: "Infraestructura y soluciones en la nube para garantizar escalabilidad y seguridad.",
         img: "/imagenesServicios/33.webp",
-        features: ["Arquitectura cloud", "Bases de datos", "Automatización de procesos", "Copias de seguridad"],
+        features: ["Estabilidad y rendimiento", "Interfaz clara y amigable", "Compatibilidad con sistemas operativos", "Seguridad y proteccion de datos", "Escalabilidad y mantenibilidad"],
     },
 ];
 
