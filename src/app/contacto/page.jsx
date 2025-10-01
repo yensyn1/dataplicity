@@ -43,7 +43,7 @@ function Contacto() {
                         <i class="fas fa-phone"></i>
                     </div>
                     <h3>Teléfono</h3>
-                    <p>+1 (123) 456-7890</p>
+                    <p>+1 (809) 662-9708</p>
                 </div>
 
                 <div class="contact-card">

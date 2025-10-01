@@ -28,7 +28,7 @@ const Softwares = [
         }}
     ></div>,
     <div
-        className="flex justify-center items-center bg-[#333333] slidesEmbla"
+        className="flex justify-center items-center bg-[#333] slidesEmbla"
         style={{
             background: `url('/imagenesSoftwareMenosClaras/Slide3.webp')`,
             backgroundSize: "cover",
