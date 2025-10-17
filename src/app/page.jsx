@@ -207,10 +207,10 @@ function LandingPage() {
         {/* Contenido con explicacion dinamica de cada que este seleccionado */}
         {Informacion === "webDev" && (
           <motion.div
-            initial={{ opacity: 0.5, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0.5, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0.5, y: -10 }}
-            transition={{ ease: "easeInOut", duration: 0.5 }}
+            transition={{ ease: "easeInOut", duration: 0.5, delay: 0.07 }}
           >
             <div className="w-full flex flex-col justify-center items-center bg-[#436d20] mt-20 py-12">
               <h5 className="text-center h4">Desarrollo de Web</h5>
@@ -231,7 +231,17 @@ function LandingPage() {
                 Experiencia de Desarrollo Web
               </h1>
               <div className="flex flex-wrap w-full justify-center gap-12">
-                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
+                <motion.div
+                  initial={{ x: -30, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: "0.5",
+                    delay: "0.02",
+                  }}
+                  className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl"
+                >
                   <div className="w-max">
                     <span className="h1 text-center">+</span>
                     <CountUp
@@ -244,8 +254,18 @@ function LandingPage() {
                     />
                   </div>
                   <p className="body-lg text-center">Anos de Experiencia</p>
-                </div>
-                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
+                </motion.div>
+                <motion.div
+                  initial={{ x: 0, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: "0.5",
+                    delay: "0.02",
+                  }}
+                  className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl"
+                >
                   <div className="w-max">
                     <span className="h1 text-center">+</span>
                     <CountUp
@@ -258,9 +278,19 @@ function LandingPage() {
                     />
                   </div>
                   <p className="body-lg">Proyectos Realizados</p>
-                </div>
+                </motion.div>
 
-                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl h-60">
+                <motion.div
+                  initial={{ x: 30, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: "0.5",
+                    delay: "0.02",
+                  }}
+                  className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl h-60"
+                >
                   <div className="w-max">
                     <span className="h1 text-center">+</span>
                     <CountUp
@@ -273,17 +303,17 @@ function LandingPage() {
                     />
                   </div>
                   <p className="body-lg">Clientes Satisfechos</p>
-                </div>
+                </motion.div>
               </div>
             </section>
           </motion.div>
         )}
         {Informacion === "softDev" && (
           <motion.div
-            initial={{ opacity: 0.5, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0.5, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0.5, y: -10 }}
-            transition={{ ease: "easeInOut", duration: 0.5 }}
+            transition={{ ease: "easeInOut", duration: 0.5, delay: 0.07 }}
           >
             <div className="w-full flex flex-col justify-center items-center bg-[#436d20] mt-20 py-12">
               <h5 className="text-center h4">Desarrollo de Software</h5>
@@ -304,7 +334,17 @@ function LandingPage() {
                 Experiencia de Desarrollo de Software
               </h1>
               <div className="flex flex-wrap w-full justify-center gap-12">
-                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
+                <motion.div
+                  initial={{ x: -30, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: "0.5",
+                    delay: "0.02",
+                  }}
+                  className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl"
+                >
                   <div className="w-max">
                     <span className="h1 text-center">+</span>
                     <CountUp
@@ -317,8 +357,18 @@ function LandingPage() {
                     />
                   </div>
                   <p className="body-lg text-center">Anos de Experiencia</p>
-                </div>
-                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: "0.5",
+                    delay: "0.02",
+                  }}
+                  className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl"
+                >
                   <div className="w-max">
                     <span className="h1 text-center">+</span>
                     <CountUp
@@ -331,9 +381,19 @@ function LandingPage() {
                     />
                   </div>
                   <p className="body-lg">Proyectos Realizados</p>
-                </div>
+                </motion.div>
 
-                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
+                <motion.div
+                  initial={{ x: 30, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: "0.5",
+                    delay: "0.02",
+                  }}
+                  className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl"
+                >
                   <div className="w-max">
                     <span className="h1 text-center">+</span>
                     <CountUp
@@ -346,17 +406,17 @@ function LandingPage() {
                     />
                   </div>
                   <p className="body-lg">Clientes Satisfechos</p>
-                </div>
+                </motion.div>
               </div>
             </section>
           </motion.div>
         )}
         {Informacion === "mobDev" && (
           <motion.div
-            initial={{ opacity: 0.5, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0.5, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0.5, y: -10 }}
-            transition={{ ease: "easeInOut", duration: 0.5 }}
+            transition={{ ease: "easeInOut", duration: 0.5, delay: 0.07 }}
           >
             <div className="w-full flex flex-col justify-center items-center bg-[#436d20] mt-20 py-12">
               <h5 className="text-center h4">
@@ -375,11 +435,27 @@ function LandingPage() {
             </div>
 
             <section className="mt-16">
-              <h1 className="h4 text-center mb-6">
+              <motion.h1
+                initial={{ opacity: 0.5, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0.5, y: -10 }}
+                transition={{ ease: "easeInOut", duration: 0.5, delay: 0.07 }}
+                className="h4 text-center mb-6 in-vi"
+              >
                 Experiencia de Desarrollo Movil
-              </h1>
+              </motion.h1>
               <div className="flex flex-wrap w-full justify-center gap-12">
-                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
+                <motion.div
+                  initial={{ x: -30, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: "0.5",
+                    delay: "0.02",
+                  }}
+                  className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl"
+                >
                   <div className="w-max">
                     <span className="h1 text-center">+</span>
                     <CountUp
@@ -392,8 +468,18 @@ function LandingPage() {
                     />
                   </div>
                   <p className="body-lg text-center">Anos de Experiencia</p>
-                </div>
-                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
+                </motion.div>
+                <motion.div
+                  initial={{ x: 0, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: "0.5",
+                    delay: "0.02",
+                  }}
+                  className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl"
+                >
                   <div className="w-max">
                     <span className="h1 text-center">+</span>
                     <CountUp
@@ -406,9 +492,19 @@ function LandingPage() {
                     />
                   </div>
                   <p className="body-lg">Proyectos Realizados</p>
-                </div>
+                </motion.div>
 
-                <div className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl">
+                <motion.div
+                  initial={{ x: 30, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: "0.5",
+                    delay: "0.02",
+                  }}
+                  className="bg-[#417a11] w-1/5 min-w-60 min-h-60 flex flex-col justify-center items-center rounded-2xl"
+                >
                   <div className="w-max">
                     <span className="h1 text-center">+</span>
                     <CountUp
@@ -421,7 +517,7 @@ function LandingPage() {
                     />
                   </div>
                   <p className="body-lg">Clientes Satisfechos</p>
-                </div>
+                </motion.div>
               </div>
             </section>
           </motion.div>
