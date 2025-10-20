@@ -209,6 +209,7 @@ function LandingPage() {
           <motion.div
             initial={{ opacity: 0.5, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             exit={{ opacity: 0.5, y: -10 }}
             transition={{ ease: "easeInOut", duration: 0.5, delay: 0.07 }}
           >
@@ -312,6 +313,7 @@ function LandingPage() {
           <motion.div
             initial={{ opacity: 0.5, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             exit={{ opacity: 0.5, y: -10 }}
             transition={{ ease: "easeInOut", duration: 0.5, delay: 0.07 }}
           >
@@ -415,6 +417,7 @@ function LandingPage() {
           <motion.div
             initial={{ opacity: 0.5, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             exit={{ opacity: 0.5, y: -10 }}
             transition={{ ease: "easeInOut", duration: 0.5, delay: 0.07 }}
           >
