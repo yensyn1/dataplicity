@@ -8,7 +8,7 @@ import "../styles/header.css";
 function Footer() {
     const pathname = usePathname();
     return (
-        <footer className="flex flex-wrap justify-center w-full gap-10  mt-10 bg-[#0d0d0d] text-white py-10 border-t-1 border-[#333]">
+        <footer className="flex flex-col  justify-center items-center w-full gap-10  mt-10 bg-[#0d0d0d] text-white py-10 border-t-1 border-[#333]">
             <section className="flex flex-col gap-1 text-center self-center">
                 <Link href={"/"} className={pathname === "/" ? " text-white CurrentLink" : "notCurrentLink"}>
                     Inicio
@@ -21,11 +21,7 @@ function Footer() {
                 </Link>
             </section>
 
-            <h1 className="self-end">&copy; DataPlicity Todos los derechos reservados 2025</h1>
-
-            <Link href={"/"} className="hover:scale-110 transition-all duration-200 delay-100">
-                <Image src={"/logo.png"} width={120} height={120} alt="Logo de Dataplicity" className="drop-shadow-2xl " />
-            </Link>
+            <h1 className="">&copy; DataPlicity Todos los derechos reservados 2025</h1>
         </footer>
     );
 }
